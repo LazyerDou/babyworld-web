@@ -7,6 +7,7 @@ import { resolve } from 'path';
 // dist/support.html, dist/terms.html. Apple's reviewer (and SEO crawlers)
 // can fetch the support / privacy URLs directly without an SPA fallback.
 export default defineConfig({
+  base: "./",
   plugins: [tailwindcss()],
   build: {
     rollupOptions: {

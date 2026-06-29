@@ -1,0 +1,76 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-pink: #ff9ed8;
+  --color-brand-blue: #5fc8ff;
+  --color-brand-purple: #b48cff;
+  --color-ink: #5a4a6a;
+  --color-ink-soft: #8a7a9a;
+  --color-surface: #fff6fb;
+  --font-sans:
+    -apple-system, BlinkMacSystemFont, 'PingFang TC', 'PingFang SC',
+    'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-family: var(--font-sans);
+  line-height: 1.75;
+}
+
+/* 粉彩梦幻渐变（对齐 app 背景） */
+.gradient-hero {
+  background: linear-gradient(
+    135deg,
+    #ffe5e5 0%,
+    #ffd9e8 30%,
+    #e8d9f5 65%,
+    #d9e8ff 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(120deg, #ff9ed8, #b48cff 50%, #5fc8ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 虹彩泡膜圆环 */
+.bubble-ring {
+  background: conic-gradient(
+    from 0deg,
+    #bde9ff,
+    #ffd6f2,
+    #d6ffe4,
+    #fff6c9,
+    #c9b6ff,
+    #bde9ff
+  );
+}
+
+/* 正文（隐私/条款）排版 */
+.prose h2 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin: 1.75rem 0 0.5rem;
+  color: var(--color-ink);
+}
+.prose p,
+.prose li {
+  color: #4b5563;
+}
+.prose ul {
+  list-style: disc;
+  padding-left: 1.25rem;
+  margin: 0.5rem 0;
+}
+.prose a {
+  color: #b48cff;
+  text-decoration: underline;
+}
